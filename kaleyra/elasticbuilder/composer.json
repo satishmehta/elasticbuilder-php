@@ -1,5 +1,5 @@
 {
-    "name": "PHP Elastic Query Builder",
+    "name": "mehta/php-elasticbuilder",
     "description": "A query builder for PHP Elastic Search",
     "type": "library",
     "license": "MIT",
