@@ -1,11 +1,11 @@
 {
-    "name": "kaleyra/elasticbuilder",
-    "description": "A query builder for Elastic Search",
+    "name": "PHP Elastic Query Builder",
+    "description": "A query builder for PHP Elastic Search",
     "type": "library",
     "license": "MIT",
     "authors": [{
         "name": "Satish Mehta",
-        "email": "satish.mehta@kaleyra.com"
+        "email": "mehtasatishdutt@gmail.com"
     }],
     "minimum-stability": "dev",
     "require": {
