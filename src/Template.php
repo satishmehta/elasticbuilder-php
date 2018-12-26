@@ -2,9 +2,10 @@
 
 namespace Kaleyra\ElasticBuilder;
 
-// use App\Http\Controllers\Controller;
-use Kaleyra\ElasticBuilder\ElasticSearch;
-use Kaleyra\ElasticBuilder\Helper\CurlHelper;
+// use Kaleyra\ElasticBuilder\ElasticSearch;
+// use Kaleyra\ElasticBuilder\Helper\CurlHelper;
+require_once("ElasticSearch.php");
+require_once("helper/CurlHelper.php");
 
 class Template extends ElasticSearch{
 

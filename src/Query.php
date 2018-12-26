@@ -2,8 +2,10 @@
 
 namespace Kaleyra\ElasticBuilder;
 
-use Kaleyra\ElasticBuilder\ElasticSearch;
-use Kaleyra\ElasticBuilder\Helper\CurlHelper;
+// use Kaleyra\ElasticBuilder\ElasticSearch;
+// use Kaleyra\ElasticBuilder\Helper\CurlHelper;
+require_once("ElasticSearch.php");
+require_once("helper/CurlHelper.php");
 
 class Query {
 
@@ -522,7 +524,7 @@ class Query {
             'index'  => $index,
             'search' => '_search'
         ];
-        
+        print_R($this->body); die;
         $response = CurlHelper::ESHttpRequest($hostArray, $method = 'GET', $jsonBody);
 
         $res = CurlHelper::httpRequest($hostArray, $method = 'GET', $jsonBody);

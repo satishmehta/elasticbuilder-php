@@ -1,39 +1,10 @@
 <?php 
 namespace Kaleyra\ElasticBuilder\Helper;
 
-use GuzzleHttp\Client;
+// use GuzzleHttp\Client;
 
 class CurlHelper {
    
-
-    public static function httpRequest($path = array(), $method = 'GET', $data = null){
-
-        if (!$path['index']) {
-            echo 'Warning: Index needs a value.';
-            exit;
-        }
-        
-        $url = $path['server'] . $path['index'] . '/' .$path['search'] .'/';
-
-        $client = new \GuzzleHttp\Client([
-            'base_uri' => $url,
-        ]);
-          
-
-        $response = $client->post([
-            'debug'        => TRUE,
-            'body'         => $data,
-            'headers'      => [
-            'Content-Type' => 'application/json',
-            ]
-        ]);
-
-        $body = $response->getBody();
-        print_r(json_decode((string) $body));
-        die;
-    }
-
-
 
     /**
      * Http Client Request for Elastic Search

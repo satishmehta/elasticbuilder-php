@@ -2,7 +2,8 @@
 
 namespace Kaleyra\ElasticBuilder;
 
-use Kaleyra\ElasticBuilder\Helper\CurlHelper;
+// use Kaleyra\ElasticBuilder\Helper\CurlHelper;
+require_once("helper/CurlHelper.php");
 
 class ElasticSearch {
 
@@ -35,7 +36,7 @@ class ElasticSearch {
      *  Constructor.
      * @param $connection
      */
-    public function __construct($connection = NULL) {        
+    public function __construct($connection = NULL) {
         $this->connection = $connection;
         self::setHostAddress();
         Self::version();

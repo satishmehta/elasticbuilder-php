@@ -2,8 +2,10 @@
 
 namespace Kaleyra\ElasticBuilder;
 
-use Kaleyra\ElasticBuilder\Search;
-use Kaleyra\ElasticBuilder\Query;
+require_once("Search.php");
+require_once("Query.php");
+// use Kaleyra\ElasticBuilder\Search;
+// use Kaleyra\ElasticBuilder\Query;
 
 
 
@@ -13,7 +15,7 @@ class ComponentFactory
     public $es = null;
     public function __construct( $es )
     {
-        $this->es = $es;
+        $this->es = $es;        
     }
 
     public function get( $name, $arguments = [])

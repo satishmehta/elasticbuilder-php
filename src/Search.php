@@ -2,7 +2,8 @@
 
 namespace Kaleyra\ElasticBuilder;
 
-use Kaleyra\ElasticBuilder\Query;
+// use Kaleyra\ElasticBuilder\Query;
+require_once("Query.php");
 
 //class Search extends Controller {
 class Search extends Query {

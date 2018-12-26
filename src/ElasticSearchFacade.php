@@ -1,8 +1,10 @@
 <?php
 namespace Kaleyra\ElasticBuilder;
 
-use Kaleyra\ElasticBuilder\ElasticSearch;
-use Kaleyra\ElasticBuilder\ComponentFactory;
+// use Kaleyra\ElasticBuilder\ElasticSearch;
+// use Kaleyra\ElasticBuilder\ComponentFactory;
+require_once("ComponentFactory.php");
+require_once("ElasticSearch.php");
 
 class ElasticSearchFacade
 {
@@ -15,8 +17,8 @@ class ElasticSearchFacade
      */
     public function __construct($connection = null)
     {
-        $this->es               = new ElasticSearch($connection);
-        $this->componentFactory = new ComponentFactory( $this->es );
+        $this->es               = new ElasticSearch($connection);        
+        $this->componentFactory = new ComponentFactory( $this->es );        
     }
 
     /**
